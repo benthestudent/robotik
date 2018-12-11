@@ -12,7 +12,7 @@ class Graph
 
     Graph(int l, int w, int start[2], int endP[2]);
     ~Graph();
-    Knoten getKnoten(int x, int y);
+
 
     private:
 
@@ -60,10 +60,6 @@ Graph::~Graph()
     delete endPoint;
 }
 
-Knoten Graph::getKnoten(int x, int y)
-{
-    return knoten.at(x * y);
-}
 
 
 //#endif
